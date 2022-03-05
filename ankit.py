@@ -836,7 +836,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By MULTI SPAMBOT")
+                await event.edit("Succesfully Changed Bio")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1550,7 +1550,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"💮ɮɨ0 x✘ ǟռӄɨȶ�💮🇵 🇴 🇳 🇬 !\n`{ms}` 𝗺𝘀")
+        await event.edit(f"🤖 Zinda Hu Baby!\n`{ms}` 𝗺𝘀")
 
 
     
@@ -1800,12 +1800,12 @@ async def help(e):
         
 text = """
 
-💥💥CONGRATULATIONS UR ɮɨ0 x✘ ǟռӄɨȶ SPAM BOT IS READY💥💥💥
-💥💥💥💥💥💥 BY OP ɮɨ0 x✘ ǟռӄɨȶ 💥💥💥💥💥💥"""
+💥💥SPAM BOT IS READY💥💥💥
+💥💥💥💥💥💥 BY OP ITACHI 💥💥💥💥💥💥"""
 
 print(text)
 print("")
-print("🙏🔥🔥ɮɨ0 x✘ ǟռӄɨȶ SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
+print("🙏🔥🔥SPAM BOT STARTED SUCCESFULLY🔥🔥🙏")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
